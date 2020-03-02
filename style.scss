@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps|Roboto+Mono:300,400,700&display=swap');
+
+$dark-bg-color: #272b30;
+$light-bg-color: #F7F3D7;
+$blue-font-color: #3FF5AC;
+$violet-font-color: #363149;
+$main-font: 'Roboto Mono';
+$logo-font: 'Elsie Swash Caps';
+
+body{
+    margin:0;
+    padding:0;
+}
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(231, 34, 179, 0.92),
+      0 0 30px rgba(231, 34, 179, 0.34),
+      0 0 12px rgba(193, 30, 242, 0.52),
+      0 0 21px rgba(193, 30, 242,0.92),
+      0 0 34px rgba(193, 30, 242,0.78),
+      0 0 54px rgba(193, 30, 242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(231, 34, 179, 0.98),
+      0 0 30px rgba(231, 34, 179, 0.42),
+      0 0 12px rgba(193, 30, 242,0.58),
+      0 0 22px rgba(193, 30, 242,0.84),
+      0 0 38px rgba(193, 30, 242,0.88),
+      0 0 60px rgba(193, 30, 242,1);
+    }
+  }
+
+nav{
+  background-color: $blue-font-color;
+  color: $dark-bg-color;
+  display: grid;
+
+  a{
+      text-decoration: none;
+      color: $dark-bg-color;
+  }
+  .logo{
+      font-family: $logo-font;
+      font-size: 52px;
+      color: violet;
+      animation: neon .08s ease-in-out infinite alternate;
+      margin: 0;
+  }
+  .nav-buttons{
+      font-family: $main-font;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+  }
+  li {
+      list-style: none;
+  }
+}
+
+#home{
+    background-color: $dark-bg-color;
+    color:$blue-font-color;
+    .name{
+        padding:40px;
+    }
+    h1{
+        font-size: 64px;
+        font-family: $logo-font;
+    }
+    .description{
+        font-size: 18px;
+        font-family: $main-font;
+        color: $light-bg-color;
+    }
+    .profile-img{
+        width: 400px;
+        border-radius: 50%;
+        padding: 30px 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#projects{
+    background-color: $light-bg-color;
+    h2{
+        font-family: $logo-font;
+        font-size: 36px;
+        color: $violet-font-color;
+        text-align: center;
+    }
+}
