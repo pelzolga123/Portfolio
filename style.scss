@@ -269,7 +269,7 @@ footer {
     justify-content: center;
 
     .profile-img {
-      width: 50%;
+      width: 70%!important;
     }
 
     div {
@@ -282,6 +282,9 @@ footer {
   #projects {
     a {
       margin-bottom: 20px;
+    }
+    .card {
+      width: 90%!important;
     }
   }
 
