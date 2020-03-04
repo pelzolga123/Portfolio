@@ -1,334 +1,370 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps|Roboto+Mono:300,400,700&display=swap');
 
 $dark-bg-color: #272b30;
-$light-bg-color: #F7F3D7;
-$blue-font-color: #3FF5AC;
+$light-bg-color: #f7f3d7;
+$blue-font-color: #3ff5ac;
 $violet-font-color: #363149;
 $main-font: 'Roboto Mono', sans-serif;
 $logo-font: 'Elsie Swash Caps', sans-serif;
 
-body{
-    margin:0;
-    padding:0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes neon {
-    from {
-      text-shadow:
+  from {
+    text-shadow:
       0 0 6px rgba(231, 34, 179, 0.92),
       0 0 30px rgba(231, 34, 179, 0.34),
       0 0 12px rgba(193, 30, 242, 0.52),
-      0 0 21px rgba(193, 30, 242,0.92),
-      0 0 34px rgba(193, 30, 242,0.78),
-      0 0 54px rgba(193, 30, 242,0.92);
-    }
-    to {
-      text-shadow:
-      0 0 6px rgba(231, 34, 179, 0.98),
-      0 0 30px rgba(231, 34, 179, 0.42),
-      0 0 12px rgba(193, 30, 242,0.58),
-      0 0 22px rgba(193, 30, 242,0.84),
-      0 0 38px rgba(193, 30, 242,0.88),
-      0 0 60px rgba(193, 30, 242,1);
-    }
+      0 0 21px rgba(193, 30, 242, 0.92),
+      0 0 34px rgba(193, 30, 242, 0.78),
+      0 0 54px rgba(193, 30, 242, 0.92);
   }
 
-  @keyframes neon-green {
-    from {
-      text-shadow:
+  to {
+    text-shadow:
+      0 0 6px rgba(231, 34, 179, 0.98),
+      0 0 30px rgba(231, 34, 179, 0.42),
+      0 0 12px rgba(193, 30, 242, 0.58),
+      0 0 22px rgba(193, 30, 242, 0.84),
+      0 0 38px rgba(193, 30, 242, 0.88),
+      0 0 60px rgba(193, 30, 242, 1);
+  }
+}
+
+@keyframes neon-green {
+  from {
+    text-shadow:
       0 0 6px rgba(31, 189, 141, 0.92),
       0 0 30px rgba(31, 189, 141, 0.34),
       0 0 12px rgba(31, 189, 141, 0.52),
       0 0 21px rgba(31, 189, 141, 0.92),
       0 0 34px rgba(31, 189, 141, 0.78),
       0 0 54px rgba(31, 189, 141, 0.92);
-    }
-    to {
-      text-shadow:
+  }
+
+  to {
+    text-shadow:
       0 0 6px rgba(31, 189, 141, 0.98),
       0 0 30px rgba(31, 189, 141, 0.42),
       0 0 12px rgba(31, 189, 141, 0.58),
       0 0 22px rgba(31, 189, 141, 0.84),
       0 0 38px rgba(31, 189, 141, 0.88),
       0 0 60px rgba(31, 189, 141, 1);
-    }
-  }  
+  }
+}
 
-nav{
+nav {
   background-color: $blue-font-color;
   color: $dark-bg-color;
   display: grid;
 
-  a{
-      text-decoration: none;
-      color: $dark-bg-color;
+  a {
+    text-decoration: none;
+    color: $dark-bg-color;
   }
-  .logo{
-      font-family: $logo-font;
-      font-size: 52px;
-      color: violet;
-      animation: neon .08s ease-in-out infinite alternate;
-      margin: 0;
+
+  .logo {
+    font-family: $logo-font;
+    font-size: 52px;
+    color: violet;
+    animation: neon 0.08s ease-in-out infinite alternate;
+    margin: 0;
   }
-  .nav-buttons{
-      font-family: $main-font;
-      font-size: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    
+
+  .nav-buttons {
+    font-family: $main-font;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   li {
-      list-style: none;
+    list-style: none;
   }
 }
 
-#home{
-    background-color: $dark-bg-color;
-    color:$blue-font-color;
-    .name{
-        padding:40px;
-    }
-    h1{
-        font-size: 64px;
-        font-family: $logo-font;
-    }
-    .description{
-        font-size: 22px;
-        font-family: $main-font;
-        color: $light-bg-color;
-    }
-    .profile-img{
-        width: 400px;
-        border-radius: 50%;
-        padding: 30px 0px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+#home {
+  background-color: $dark-bg-color;
+  color: $blue-font-color;
+
+  .name {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 64px;
+    font-family: $logo-font;
+  }
+
+  .description {
+    font-size: 22px;
+    font-family: $main-font;
+    color: $light-bg-color;
+  }
+
+  .profile-img {
+    width: 400px;
+    border-radius: 50%;
+    padding: 30px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-#projects{
-    background-color: $light-bg-color;
-    padding-bottom: 40px;
+#projects {
+  background-color: $light-bg-color;
+  padding-bottom: 40px;
 
-    h2{
-        font-family: $logo-font;
-        font-size: 36px;
-        color: $violet-font-color;
-        text-align: center;
+  h2 {
+    font-family: $logo-font;
+    font-size: 36px;
+    color: $violet-font-color;
+    text-align: center;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(41, 12, 33, 0.2);
+    transition: 0.3s;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(41, 12, 33, 0.2);
+  }
+
+  .card-description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h3 {
+      font-size: 28px;
+      color: $violet-font-color;
+      text-align: center;
+      font-family: $logo-font;
     }
-    .card{
-        box-shadow: 0 4px 8px 0 rgba(41, 12, 33, 0.2);
-        transition: 0.3s;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        background-color: #fff;
+
+    p {
+      font-size: 20px;
+      font-family: $main-font;
+      color: $dark-bg-color;
     }
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(41, 12, 33, 0.2);
+  }
+
+  .project-img {
+    display: flex;
+
+    img {
+      width: 100%;
     }
-    .card-description{
-        width:90%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        
-        h3{
-            font-size: 28px;
-            color: $violet-font-color;
-            text-align: center;
-            font-family: $logo-font;
-        } 
-        p {
-            font-size: 20px;
-            font-family: $main-font;
-            color: $dark-bg-color;
-        }
+  }
+
+  .buttons {
+    a {
+      font-size: 18px;
+      font-family: $main-font;
+      color: $blue-font-color;
+      padding: 8px;
+      background-color: $violet-font-color;
+      border: 1px solid $violet-font-color;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
     }
-    .project-img{
-        display:flex;
-        img {
-            width: 100%;
-        }
-    }
-    .buttons {
-        a {
-            font-size: 18px;
-            font-family: $main-font;
-            color: $blue-font-color;
-            padding: 8px;
-            background-color: $violet-font-color;
-            border: 1px solid $violet-font-color;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        margin-bottom: 20px;
-    }
+
+    margin-bottom: 20px;
+  }
 }
 
 #skills {
-    background-color: $dark-bg-color;
+  background-color: $dark-bg-color;
+  padding-bottom: 20px;
+
+  h2 {
+    font-family: $logo-font;
+    font-size: 36px;
+    color: $light-bg-color;
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  i {
+    font-size: 120px;
     padding-bottom: 20px;
-    h2{
-        font-family: $logo-font;
-        font-size: 36px;
-        color: $light-bg-color;
-        text-align: center;
-    }
-    .container{
-        width:90%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    i {
-        font-size: 120px;
-        padding-bottom: 20px;
+  }
 
-    }
-    .violet{
-        color: violet;
-        animation: neon .08s ease-in-out infinite alternate;
-    }
-    .green{
-        color: $blue-font-color;
-        animation: neon-green .08s ease-in-out infinite alternate;
-    }
+  .violet {
+    color: violet;
+    animation: neon 0.08s ease-in-out infinite alternate;
+  }
+
+  .green {
+    color: $blue-font-color;
+    animation: neon-green 0.08s ease-in-out infinite alternate;
+  }
 }
-      
+
 #contact {
-    background-color: $light-bg-color;
+  background-color: $light-bg-color;
 
-    h2{
-        font-family: $logo-font;
-        font-size: 36px;
-        color: $violet-font-color;
-        text-align: center;
-    }
-    .contact-div{
-        font-size: 50px;
-        width:50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        text-align: center;
-
-        a {
-            text-decoration: none;
-            padding: 20px;
-            color: $violet-font-color;
-        }
-    }    
-}
-footer {
-    background-color: $blue-font-color;
-    font-family: $main-font;
+  h2 {
+    font-family: $logo-font;
+    font-size: 36px;
     color: $violet-font-color;
     text-align: center;
-    padding: 35px 0;
+  }
+
+  .contact-div {
+    font-size: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      padding: 20px;
+      color: $violet-font-color;
+    }
+  }
+}
+
+footer {
+  background-color: $blue-font-color;
+  font-family: $main-font;
+  color: $violet-font-color;
+  text-align: center;
+  padding: 35px 0;
 }
 
 @media (max-width: 750px) {
-    nav {
-        ul {
-            text-align: center;
-            padding: 0;
-        }
+  nav {
+    ul {
+      text-align: center;
+      padding: 0;
     }
-    #home {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
+  }
 
-        .profile-img{
-            width: 50%;
-        }
-        div{
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    #projects{
-        a{
-            margin-bottom: 20px;
-        }
-    }
-    #skills{
-        div {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        i {
-            font-size: 60px;
-            width: 30%;
-        }
-    }
-    #contact {
-        div {
-            display: flex;
-            justify-content: center;
-        }
+  #home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
 
+    .profile-img {
+      width: 50%;
     }
+
+    div {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  #projects {
+    a {
+      margin-bottom: 20px;
+    }
+  }
+
+  #skills {
+    div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    i {
+      font-size: 60px;
+      width: 30%;
+    }
+  }
+
+  #contact {
+    div {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 1100px) {
-    nav {
-        ul {
-        justify-content: space-between!important;
-        flex-wrap: nowrap!important;
-        padding: 5px 15px;
-        }
+  nav {
+    ul {
+      justify-content: space-between !important;
+      flex-wrap: nowrap !important;
+      padding: 5px 15px;
     }
-    #home {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        padding: 60px 0;
+  }
 
-        .profile-img{
-            width: 35%;
-        }
-        div{
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-        }
+  #home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 60px 0;
+
+    .profile-img {
+      width: 35%;
     }
-    #projects{
-        flex-direction: column;
-        .card {
-            width: 70%;
-        }
-        a{
-            margin-bottom: 20px;
-        }
+
+    div {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
     }
-    #skills{
-        display:flex;
-        flex-direction: column;
-        div {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        i {
-            font-size: 60px;
-            width: 30%;
-        }
+  }
+
+  #projects {
+    flex-direction: column;
+
+    .card {
+      width: 70%;
     }
-    #contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+
+    a {
+      margin-bottom: 20px;
     }
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    i {
+      font-size: 60px;
+      width: 30%;
+    }
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
