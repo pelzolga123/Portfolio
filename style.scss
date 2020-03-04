@@ -94,7 +94,7 @@ nav{
         font-family: $logo-font;
     }
     .description{
-        font-size: 18px;
+        font-size: 22px;
         font-family: $main-font;
         color: $light-bg-color;
     }
@@ -164,6 +164,7 @@ nav{
             background-color: $violet-font-color;
             border: 1px solid $violet-font-color;
             border-radius: 5px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -207,6 +208,20 @@ nav{
         color: $violet-font-color;
         text-align: center;
     }
+    .contact-div{
+        font-size: 50px;
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        text-align: center;
+
+        a {
+        text-decoration: none;
+        padding: 20px;
+        }
+
+    }    
 }
 footer {
     background-color: $blue-font-color;
@@ -215,4 +230,104 @@ footer {
     text-align: center;
     padding: 35px 0;
 
+}
+
+@media (max-width: 750px) {
+    nav {
+        ul {
+            text-align: center;
+            padding: 0;
+        }
+    }
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        .profile-img{
+            width: 50%;
+        }
+        div{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #projects{
+        button{
+            margin-bottom: 20px;
+        }
+    }
+    #skills{
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        i {
+            font-size: 60px;
+            width: 30%;
+        }
+    }
+    #contact {
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+@media (max-width: 1100px) {
+    nav {
+        ul {
+        justify-content: space-between!important;
+        flex-wrap: nowrap!important;
+        padding: 5px 15px;
+        }
+    }
+    #home {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 60px 0;
+
+        .profile-img{
+            width: 35%;
+        }
+        div{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #projects{
+        flex-direction: column;
+        .card {
+            width: 70%;
+        }
+        button{
+            margin-bottom: 20px;
+        }
+    }
+    #skills{
+        display:flex;
+        flex-direction: column;
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        i {
+            font-size: 60px;
+            width: 30%;
+        }
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
