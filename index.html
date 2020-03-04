@@ -6,6 +6,7 @@
   
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
     
@@ -24,10 +25,10 @@
   <a href="#projects">Projects</a>
 </li>
 <li class='nav-buttons col-6-7 row-1-2'>
-  <a>Skills</a>
+  <a href="#skills">Skills</a>
 </li>
 <li class='nav-buttons col-7-8 row-1-2'>
-  <a>Contact</a>
+  <a href="#contact">Contact</a>
 </li>
 
 </ul>
@@ -38,17 +39,131 @@
     <h1>Olga Pelts</h1>
     <p class='description'>Some text about me</p>
     </div>
-    <div class="col-4-6 row-1-2">
-      <img src="profile_picture.jpg" class='profile-img'>
+    <div class="col-5-6 row-1-2">
+      <img src="./img/profile_picture.jpg" class='profile-img'>
     </div>
   </section>
   <section class='container col-template-1' id='projects'>
     <h2>Projects</h2>
-  </section>  
 
+    <div class="card container col-template-3">
+      <div class="col-1-2 row-1-2 project-img">
+
+       <img src="./img/facebook-project.png" >
+      </div>
+      <div class="col-2-4 row-1-2 card-description">
+       <h3>Facebook clone</h3>
+       <p>Implementation of Facebook using Ruby on Rails. Project emulates some functionalities of Facebook: accept & send friend requests, 
+         submit posts and see the posts of friends, comment on the posts and like them.</p>
+       <div class="buttons">
+       <button>View Demo</button>
+       <button><i class="devicon-github-plain-wordmark"></i> View Source</button>
+      </div>
+      </div>
+    </div> 
+
+    <div class="card container col-template-3">
+      <div class="col-1-2 row-1-2 project-img">
+       <img src="./img/weather-project.png" >
+      </div>
+      <div class="col-2-4 row-1-2 card-description">
+        <h3>Weather App</h3>
+        <p>This Weather app uses Dark SKY API to display current weather in any city of Europe. Unsplash API is used for background images.
+        </p>
+        <div class="buttons">
+        <button>View Demo</button>
+        <button><i class="devicon-github-plain-wordmark"></i> View Source</button>
+       </div>
+      </div>
+    </div> 
+
+    <div class="card container col-template-3">
+      <div class="col-1-2 row-1-2 project-img">
+       <img src="./img/travel-project.png" >
+      </div>
+      <div class="col-2-4 row-1-2 card-description">
+        <h3>Travel App</h3>
+        <p>This is a tablet app, where user can book travel deals. Created using Ruby on Rails for back-end and Javscript, React for front-end.  
+        List of deals is provided from the backend.
+        </p>
+        <div class="buttons">
+        <button>View Demo</button>
+        <button><i class="devicon-github-plain-wordmark"></i> View Source</button>
+       </div>
+      </div>
+    </div> 
+
+    <div class="card container col-template-3">
+      <div class="col-1-2 row-1-2 project-img">
+       <img src="./img/tic-tac-toe-project.png" >
+      </div>
+      <div class="col-2-4 row-1-2 card-description">
+        <h3>Tic-Tac-Toe Game</h3>
+        <p>This project is an implementation of the well known Tic-Tac-Toe game using Javascript. Suitable for two human players.
+        </p>
+        <div class="buttons">
+        <button>View Demo</button>
+        <button><i class="devicon-github-plain-wordmark"></i> View Source</button>
+       </div>
+      </div>
+    </div> 
+
+    <div class="card container col-template-3">
+      <div class="col-1-2 row-1-2 project-img">
+       <img src="./img/restaurant-project.png" >
+      </div>
+      <div class="col-2-4 row-1-2 card-description">
+        <h3>Restaurant</h3>
+        <p>Restaurant webpage is created dynamically with ES6 modules. Each tab is rendered dynamically by a separate module with help of Webpack.
+        </p>
+        <div class="buttons">
+        <button>View Demo</button>
+        <button><i class="devicon-github-plain-wordmark"></i> View Source</button>
+       </div>
+      </div>
+    </div> 
+
+
+    <div class="card container col-template-3">
+      <div class="col-1-2 row-1-2 project-img">
+       <img src="./img/framework-project.png" >
+      </div>
+      <div class="col-2-4 row-1-2 card-description">
+        <h3>Framework Project</h3>
+        <p>Framework project is grid-based framework, similar to Bootstrap, with 12-column design and classes for text, buttons, navbar, etc. 
+        </p> 
+        <div class="buttons">
+        <button>View Demo</button>
+        <button><i class="devicon-github-plain-wordmark"></i> View Source</button>
+       </div>
+      </div>
+    </div> 
+
+  </section>  
+  <section class='container' id='skills'>
+    <h2>Skills</h2>
+    <div class="container col-template-6">
+        <i class="col-1-2 row-1-2 devicon-github-plain-wordmark violet"></i>
+        <i class="col-2-3 row-1-2 devicon-heroku-plain-wordmark green"></i>
+        <i class="col-3-4 row-1-2 devicon-bootstrap-plain-wordmark violet"></i>
+        <i class="col-4-5 row-1-2 devicon-css3-plain-wordmark green"></i>
+        <i class="col-5-6 row-1-2 devicon-sass-original violet"></i>
+        <i class="col-6-7 row-1-2 devicon-html5-plain green"></i>
+        <i class="col-1-2 row-2-3 devicon-ruby-plain-wordmark green"></i>
+        <i class="col-2-3 row-2-3 devicon-react-original-wordmark violet"></i>
+        <i class="col-3-4 row-2-3 devicon-postgresql-plain-wordmark green"></i>
+        <i class="col-4-5 row-2-3 devicon-javascript-plain violet"></i>
+        <i class="col-5-6 row-2-3 devicon-webpack-plain-wordmark green"></i>
+        <i class="col-6-7 row-2-3 devicon-rails-plain-wordmark violet"></i>
+  </div>
+  </section> 
+
+  <section class='container' id='contact'>
+    <h2>Contact</h2>
+  </section> 
 </main>
-<footer>
-    
+<footer class='container col-template-1'>
+    <p>Made by Olga Pelts © 2020</p>
 </footer>
 </body>  
 

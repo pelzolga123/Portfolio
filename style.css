@@ -8,6 +8,11 @@ body {
     text-shadow: 0 0 6px rgba(231, 34, 179, 0.92), 0 0 30px rgba(231, 34, 179, 0.34), 0 0 12px rgba(193, 30, 242, 0.52), 0 0 21px rgba(193, 30, 242, 0.92), 0 0 34px rgba(193, 30, 242, 0.78), 0 0 54px rgba(193, 30, 242, 0.92); }
   to {
     text-shadow: 0 0 6px rgba(231, 34, 179, 0.98), 0 0 30px rgba(231, 34, 179, 0.42), 0 0 12px rgba(193, 30, 242, 0.58), 0 0 22px rgba(193, 30, 242, 0.84), 0 0 38px rgba(193, 30, 242, 0.88), 0 0 60px #c11ef2; } }
+@keyframes neon-green {
+  from {
+    text-shadow: 0 0 6px rgba(31, 189, 141, 0.92), 0 0 30px rgba(31, 189, 141, 0.34), 0 0 12px rgba(31, 189, 141, 0.52), 0 0 21px rgba(31, 189, 141, 0.92), 0 0 34px rgba(31, 189, 141, 0.78), 0 0 54px rgba(31, 189, 141, 0.92); }
+  to {
+    text-shadow: 0 0 6px rgba(31, 189, 141, 0.98), 0 0 30px rgba(31, 189, 141, 0.42), 0 0 12px rgba(31, 189, 141, 0.58), 0 0 22px rgba(31, 189, 141, 0.84), 0 0 38px rgba(31, 189, 141, 0.88), 0 0 60px #1fbd8d; } }
 nav {
   background-color: #3FF5AC;
   color: #272b30;
@@ -50,11 +55,88 @@ nav {
     margin-right: auto; }
 
 #projects {
-  background-color: #F7F3D7; }
+  background-color: #F7F3D7;
+  padding-bottom: 40px; }
   #projects h2 {
     font-family: "Elsie Swash Caps";
     font-size: 36px;
     color: #363149;
     text-align: center; }
+  #projects .card {
+    box-shadow: 0 4px 8px 0 rgba(41, 12, 33, 0.2);
+    transition: 0.3s;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #fff; }
+  #projects .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(41, 12, 33, 0.2); }
+  #projects .card-description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    #projects .card-description h3 {
+      font-size: 28px;
+      color: #363149;
+      text-align: center;
+      font-family: "Elsie Swash Caps"; }
+    #projects .card-description p {
+      font-size: 20px;
+      font-family: "Roboto Mono";
+      color: #272b30; }
+  #projects .project-img {
+    display: flex; }
+    #projects .project-img img {
+      width: 100%; }
+  #projects .buttons button {
+    font-size: 18px;
+    font-family: "Roboto Mono";
+    color: #3FF5AC;
+    padding: 8px;
+    background-color: #363149;
+    border: 1px solid #363149;
+    border-radius: 5px; }
+
+#skills {
+  background-color: #272b30;
+  padding-bottom: 20px; }
+  #skills h2 {
+    font-family: "Elsie Swash Caps";
+    font-size: 36px;
+    color: #F7F3D7;
+    text-align: center; }
+  #skills .container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #skills i {
+    font-size: 120px;
+    padding-bottom: 20px; }
+  #skills .violet {
+    color: violet;
+    animation: neon .08s ease-in-out infinite alternate; }
+  #skills .green {
+    color: #3FF5AC;
+    animation: neon-green .08s ease-in-out infinite alternate; }
+
+#contact {
+  background-color: #F7F3D7; }
+  #contact h2 {
+    font-family: "Elsie Swash Caps";
+    font-size: 36px;
+    color: #363149;
+    text-align: center; }
+
+footer {
+  background-color: #3FF5AC;
+  font-family: "Roboto Mono";
+  color: #363149;
+  text-align: center;
+  padding: 35px 0; }
 
 /*# sourceMappingURL=style.css.map */
