@@ -156,7 +156,7 @@ nav{
         }
     }
     .buttons {
-        button {
+        a {
             font-size: 18px;
             font-family: $main-font;
             color: $blue-font-color;
@@ -164,8 +164,10 @@ nav{
             background-color: $violet-font-color;
             border: 1px solid $violet-font-color;
             border-radius: 5px;
-            margin-bottom: 20px;
+            cursor: pointer;
+            text-decoration: none;
         }
+        margin-bottom: 20px;
     }
 }
 
@@ -217,10 +219,10 @@ nav{
         text-align: center;
 
         a {
-        text-decoration: none;
-        padding: 20px;
+            text-decoration: none;
+            padding: 20px;
+            color: $violet-font-color;
         }
-
     }    
 }
 footer {
@@ -229,7 +231,6 @@ footer {
     color: $violet-font-color;
     text-align: center;
     padding: 35px 0;
-
 }
 
 @media (max-width: 750px) {
@@ -254,7 +255,7 @@ footer {
         }
     }
     #projects{
-        button{
+        a{
             margin-bottom: 20px;
         }
     }
@@ -307,7 +308,7 @@ footer {
         .card {
             width: 70%;
         }
-        button{
+        a{
             margin-bottom: 20px;
         }
     }

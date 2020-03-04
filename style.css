@@ -92,15 +92,18 @@ nav {
     display: flex; }
     #projects .project-img img {
       width: 100%; }
-  #projects .buttons button {
-    font-size: 18px;
-    font-family: "Roboto Mono";
-    color: #3FF5AC;
-    padding: 8px;
-    background-color: #363149;
-    border: 1px solid #363149;
-    border-radius: 5px;
+  #projects .buttons {
     margin-bottom: 20px; }
+    #projects .buttons a {
+      font-size: 18px;
+      font-family: "Roboto Mono";
+      color: #3FF5AC;
+      padding: 8px;
+      background-color: #363149;
+      border: 1px solid #363149;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none; }
 
 #skills {
   background-color: #272b30;
@@ -141,7 +144,8 @@ nav {
     text-align: center; }
     #contact .contact-div a {
       text-decoration: none;
-      padding: 20px; }
+      padding: 20px;
+      color: #363149; }
 
 footer {
   background-color: #3FF5AC;
@@ -166,7 +170,7 @@ footer {
       display: flex;
       flex-direction: column; }
 
-  #projects button {
+  #projects a {
     margin-bottom: 20px; }
 
   #skills div {
@@ -203,7 +207,7 @@ footer {
     flex-direction: column; }
     #projects .card {
       width: 70%; }
-    #projects button {
+    #projects a {
       margin-bottom: 20px; }
 
   #skills {
