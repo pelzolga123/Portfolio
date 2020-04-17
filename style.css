@@ -1,242 +1,345 @@
 @import url("https://fonts.googleapis.com/css?family=Elsie+Swash+Caps|Roboto+Mono:300,400,700&display=swap");
+
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 nav {
-  background-color: #00FFC9;
-  color: #150F44;
-  display: grid; }
-  nav a {
-    text-decoration: none;
-    color: #150F44; }
-  nav .logo {
-    font-family: "Elsie Swash Caps", sans-serif;
-    font-size: 52px;
-    color: #95186C;
-    margin: 0; }
-  nav .nav-buttons {
-    font-family: "Roboto Mono", sans-serif;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  nav li {
-    list-style: none; }
+  background-color: #00ffc9;
+  color: #150f44;
+  display: grid;
+}
+
+nav a {
+  text-decoration: none;
+  color: #150f44;
+}
+
+nav .logo {
+  font-family: "Elsie Swash Caps", sans-serif;
+  font-size: 52px;
+  color: #95186c;
+  margin: 0;
+}
+
+nav .nav-buttons {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+}
 
 #home {
-  background-color: #150F44;
-  color: #00FFC9; }
-  #home .name {
-    padding: 40px; }
-  #home h1 {
-    font-size: 64px;
-    font-family: "Elsie Swash Caps", sans-serif; }
-  #home .description {
-    font-size: 22px;
-    font-family: "Roboto Mono", sans-serif;
-    color: #f7f3d7; }
-  #home .links div a {
-    text-decoration: none;
-    padding-right: 20px;
-    color: #f7f3d7; }
-    #home .links div a i {
-      font-size: 30px; }
-  #home .profile-img {
-    width: 400px;
-    border-radius: 50%;
-    padding: 30px 0;
-    margin-left: auto;
-    margin-right: auto; }
+  background-color: #150f44;
+  color: #00ffc9;
+}
+
+#home .name {
+  padding: 40px;
+}
+
+#home h1 {
+  font-size: 64px;
+  font-family: "Elsie Swash Caps", sans-serif;
+}
+
+#home .description {
+  font-size: 22px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #f7f3d7;
+}
+
+#home .links div a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: #f7f3d7;
+}
+
+#home .links div a i {
+  font-size: 30px;
+}
+
+#home .profile-img {
+  width: 400px;
+  border-radius: 50%;
+  padding: 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #projects {
   background-color: #f7f3d7;
-  padding-bottom: 40px; }
-  #projects h2 {
-    font-family: "Elsie Swash Caps", sans-serif;
-    font-size: 36px;
-    color: #150F44;
-    text-align: center; }
-  #projects .card {
-    box-shadow: 0 4px 8px 0 rgba(41, 12, 33, 0.2);
-    transition: 0.3s;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    background-color: #fff; }
-  #projects .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(41, 12, 33, 0.2); }
-  #projects .card-description {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-    #projects .card-description h3 {
-      font-size: 28px;
-      color: #150F44;
-      text-align: center;
-      font-family: "Elsie Swash Caps", sans-serif; }
-    #projects .card-description p {
-      font-size: 20px;
-      font-family: "Roboto Mono", sans-serif;
-      color: #150F44; }
-  #projects .project-img {
-    display: flex; }
-    #projects .project-img img {
-      width: 100%; }
-  #projects .buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px; }
-    #projects .buttons .technology {
-      border: 2px solid #150F44;
-      color: #150F44;
-      border-radius: 5px;
-      font-size: 30px;
-      padding: 5px; }
-    #projects .buttons a {
-      font-size: 18px;
-      font-family: "Roboto Mono", sans-serif;
-      color: #00FFC9;
-      padding: 8px;
-      background-color: #150F44;
-      border: 1px solid #150F44;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none; }
+  padding-bottom: 40px;
+}
+
+#projects h2 {
+  font-family: "Elsie Swash Caps", sans-serif;
+  font-size: 36px;
+  color: #150f44;
+  text-align: center;
+}
+
+#projects .card {
+  box-shadow: 0 4px 8px 0 rgba(41, 12, 33, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+#projects .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(41, 12, 33, 0.2);
+}
+
+#projects .card-description {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#projects .card-description h3 {
+  font-size: 28px;
+  color: #150f44;
+  text-align: center;
+  font-family: "Elsie Swash Caps", sans-serif;
+}
+
+#projects .card-description p {
+  font-size: 20px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #150f44;
+}
+
+#projects .project-img {
+  display: flex;
+}
+
+#projects .project-img img {
+  width: 100%;
+}
+
+#projects .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#projects .buttons .technology {
+  border: 2px solid #150f44;
+  color: #150f44;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+#projects .buttons a {
+  font-size: 18px;
+  font-family: "Roboto Mono", sans-serif;
+  color: #00ffc9;
+  padding: 8px;
+  background-color: #150f44;
+  border: 1px solid #150f44;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 #skills {
-  background-color: #150F44;
-  padding-bottom: 20px; }
-  #skills h2 {
-    font-family: "Elsie Swash Caps", sans-serif;
-    font-size: 36px;
-    color: #f7f3d7;
-    text-align: center; }
-  #skills .container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; }
-  #skills i {
-    font-size: 60px;
-    padding-bottom: 20px; }
-  #skills .violet {
-    color: #EC8ECC; }
-  #skills .green {
-    color: #00FFC9; }
+  background-color: #150f44;
+  padding-bottom: 20px;
+}
+
+#skills h2 {
+  font-family: "Elsie Swash Caps", sans-serif;
+  font-size: 36px;
+  color: #f7f3d7;
+  text-align: center;
+}
+
+#skills .container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#skills i {
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+#skills .violet {
+  color: #ec8ecc;
+}
+
+#skills .green {
+  color: #00ffc9;
+}
 
 #contact {
-  background-color: #f7f3d7; }
-  #contact h2 {
-    font-family: "Elsie Swash Caps", sans-serif;
-    font-size: 36px;
-    color: #150F44;
-    text-align: center; }
-  #contact .contact-div {
-    font-size: 50px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    text-align: center; }
-    #contact .contact-div a {
-      text-decoration: none;
-      padding: 20px;
-      color: #150F44; }
+  background-color: #f7f3d7;
+}
+
+#contact h2 {
+  font-family: "Elsie Swash Caps", sans-serif;
+  font-size: 36px;
+  color: #150f44;
+  text-align: center;
+}
+
+#contact .contact-div {
+  font-size: 50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-div a {
+  text-decoration: none;
+  padding: 20px;
+  color: #150f44;
+}
 
 footer {
-  background-color: #00FFC9;
+  background-color: #00ffc9;
   font-family: "Roboto Mono", sans-serif;
-  color: #150F44;
+  color: #150f44;
   text-align: center;
-  padding: 35px 0; }
+  padding: 35px 0;
+}
 
 @media (max-width: 750px) {
   nav ul {
     text-align: center;
-    padding: 0; }
-
-  #home {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center; }
-    #home .profile-img {
-      width: 70% !important; }
-    #home div {
-      justify-content: center;
-      display: flex;
-      flex-direction: column; }
-
-  #projects a {
-    margin-bottom: 20px; }
-  #projects .card {
-    width: 90% !important; }
-  #projects .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline; }
-    #projects .buttons div {
-      padding: 15px 0 10px 0; }
-
-  #skills div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  #skills i {
-    font-size: 60px;
-    width: 30%; }
-
-  #contact div {
-    display: flex;
-    justify-content: center; } }
-@media (max-width: 1100px) {
-  nav ul {
-    justify-content: space-between !important;
-    flex-wrap: nowrap !important;
-    padding: 5px 15px; }
+    padding: 0;
+  }
 
   #home {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    padding: 60px 0; }
-    #home .profile-img {
-      width: 35%; }
-    #home .links div {
-      display: block; }
-    #home div {
-      justify-content: center;
-      display: flex;
-      flex-direction: column; }
+  }
+
+  #home .profile-img {
+    width: 70% !important;
+  }
+
+  #home div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects a {
+    margin-bottom: 20px;
+  }
+
+  #projects .card {
+    width: 90% !important;
+  }
+
+  #projects .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  #projects .buttons div {
+    padding: 15px 0 10px 0;
+  }
+
+  #skills div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #skills i {
+    font-size: 60px;
+    width: 30%;
+  }
+
+  #contact div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav ul {
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    padding: 5px 15px;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
+  #home .profile-img {
+    width: 35%;
+  }
+
+  #home .links div {
+    display: block;
+  }
+
+  #home div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
 
   #projects {
-    flex-direction: column; }
-    #projects .card {
-      width: 70%; }
-    #projects a {
-      margin-bottom: 20px; }
+    flex-direction: column;
+  }
+
+  #projects .card {
+    width: 70%;
+  }
+
+  #projects a {
+    margin-bottom: 20px;
+  }
 
   #skills {
     display: flex;
-    flex-direction: column; }
-    #skills div {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    #skills i {
-      font-size: 60px;
-      width: 30%; }
+    flex-direction: column;
+  }
+
+  #skills div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #skills i {
+    font-size: 60px;
+    width: 30%;
+  }
 
   #contact {
     display: flex;
     flex-direction: column;
-    justify-content: center; } }
-
-/*# sourceMappingURL=style.css.map */
+    justify-content: center;
+  }
+}
