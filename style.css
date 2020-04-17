@@ -82,7 +82,16 @@ nav {
     #projects .project-img img {
       width: 100%; }
   #projects .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px; }
+    #projects .buttons .technology {
+      border: 2px solid #150F44;
+      color: #150F44;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 5px; }
     #projects .buttons a {
       font-size: 18px;
       font-family: "Roboto Mono", sans-serif;

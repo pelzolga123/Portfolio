@@ -126,6 +126,16 @@ nav {
   }
 
   .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .technology{
+      border: 2px solid #150F44;
+      color: #150F44;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 5px;
+    }
     a {
       font-size: 18px;
       font-family: $main-font;
