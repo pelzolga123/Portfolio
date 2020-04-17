@@ -1,59 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps|Roboto+Mono:300,400,700&display=swap');
 
-$dark-bg-color: #272b30;
+$dark-bg-color: #150F44;
 $light-bg-color: #f7f3d7;
-$blue-font-color: #3ff5ac;
-$violet-font-color: #363149;
+$blue-font-color: #00FFC9;
+$violet-font-color: #150F44;
 $main-font: 'Roboto Mono', sans-serif;
 $logo-font: 'Elsie Swash Caps', sans-serif;
 
 body {
   margin: 0;
   padding: 0;
-}
-
-@keyframes neon {
-  from {
-    text-shadow:
-      0 0 6px rgba(231, 34, 179, 0.92),
-      0 0 30px rgba(231, 34, 179, 0.34),
-      0 0 12px rgba(193, 30, 242, 0.52),
-      0 0 21px rgba(193, 30, 242, 0.92),
-      0 0 34px rgba(193, 30, 242, 0.78),
-      0 0 54px rgba(193, 30, 242, 0.92);
-  }
-
-  to {
-    text-shadow:
-      0 0 6px rgba(231, 34, 179, 0.98),
-      0 0 30px rgba(231, 34, 179, 0.42),
-      0 0 12px rgba(193, 30, 242, 0.58),
-      0 0 22px rgba(193, 30, 242, 0.84),
-      0 0 38px rgba(193, 30, 242, 0.88),
-      0 0 60px rgba(193, 30, 242, 1);
-  }
-}
-
-@keyframes neon-green {
-  from {
-    text-shadow:
-      0 0 6px rgba(31, 189, 141, 0.92),
-      0 0 30px rgba(31, 189, 141, 0.34),
-      0 0 12px rgba(31, 189, 141, 0.52),
-      0 0 21px rgba(31, 189, 141, 0.92),
-      0 0 34px rgba(31, 189, 141, 0.78),
-      0 0 54px rgba(31, 189, 141, 0.92);
-  }
-
-  to {
-    text-shadow:
-      0 0 6px rgba(31, 189, 141, 0.98),
-      0 0 30px rgba(31, 189, 141, 0.42),
-      0 0 12px rgba(31, 189, 141, 0.58),
-      0 0 22px rgba(31, 189, 141, 0.84),
-      0 0 38px rgba(31, 189, 141, 0.88),
-      0 0 60px rgba(31, 189, 141, 1);
-  }
 }
 
 nav {
@@ -69,8 +25,7 @@ nav {
   .logo {
     font-family: $logo-font;
     font-size: 52px;
-    color: violet;
-    animation: neon 0.08s ease-in-out infinite alternate;
+    color: #95186C;
     margin: 0;
   }
 
@@ -105,7 +60,18 @@ nav {
     font-family: $main-font;
     color: $light-bg-color;
   }
-
+  .links{
+    div{
+      a{
+        text-decoration: none;
+        padding-right: 20px;
+        color: #f7f3d7;
+        i{
+          font-size:30px;
+        }
+      }
+    }
+  }
   .profile-img {
     width: 400px;
     border-radius: 50%;
@@ -171,6 +137,16 @@ nav {
   }
 
   .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .technology{
+      border: 2px solid #150F44;
+      color: #150F44;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 5px;
+    }
     a {
       font-size: 18px;
       font-family: $main-font;
@@ -206,18 +182,16 @@ nav {
   }
 
   i {
-    font-size: 120px;
+    font-size: 60px;
     padding-bottom: 20px;
   }
 
   .violet {
-    color: violet;
-    animation: neon 0.08s ease-in-out infinite alternate;
+    color: #EC8ECC;
   }
 
   .green {
     color: $blue-font-color;
-    animation: neon-green 0.08s ease-in-out infinite alternate;
   }
 }
 
@@ -286,6 +260,14 @@ footer {
     .card {
       width: 90%!important;
     }
+    .buttons{
+      display: flex;
+      flex-direction:column;
+      align-items: baseline;
+      div{
+        padding: 15px 0 10px 0;
+      }
+    }
   }
 
   #skills {
@@ -327,6 +309,11 @@ footer {
 
     .profile-img {
       width: 35%;
+    }
+    .links{
+      div{
+        display: block;
+      }
     }
 
     div {

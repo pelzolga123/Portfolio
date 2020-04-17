@@ -5,42 +5,21 @@ body {
   padding: 0;
 }
 
-@keyframes neon {
-  from {
-    text-shadow: 0 0 6px rgba(231, 34, 179, 0.92), 0 0 30px rgba(231, 34, 179, 0.34), 0 0 12px rgba(193, 30, 242, 0.52), 0 0 21px rgba(193, 30, 242, 0.92), 0 0 34px rgba(193, 30, 242, 0.78), 0 0 54px rgba(193, 30, 242, 0.92);
-  }
-
-  to {
-    text-shadow: 0 0 6px rgba(231, 34, 179, 0.98), 0 0 30px rgba(231, 34, 179, 0.42), 0 0 12px rgba(193, 30, 242, 0.58), 0 0 22px rgba(193, 30, 242, 0.84), 0 0 38px rgba(193, 30, 242, 0.88), 0 0 60px #c11ef2;
-  }
-}
-
-@keyframes neon-green {
-  from {
-    text-shadow: 0 0 6px rgba(31, 189, 141, 0.92), 0 0 30px rgba(31, 189, 141, 0.34), 0 0 12px rgba(31, 189, 141, 0.52), 0 0 21px rgba(31, 189, 141, 0.92), 0 0 34px rgba(31, 189, 141, 0.78), 0 0 54px rgba(31, 189, 141, 0.92);
-  }
-
-  to {
-    text-shadow: 0 0 6px rgba(31, 189, 141, 0.98), 0 0 30px rgba(31, 189, 141, 0.42), 0 0 12px rgba(31, 189, 141, 0.58), 0 0 22px rgba(31, 189, 141, 0.84), 0 0 38px rgba(31, 189, 141, 0.88), 0 0 60px #1fbd8d;
-  }
-}
-
 nav {
-  background-color: #3ff5ac;
-  color: #272b30;
+  background-color: #00ffc9;
+  color: #150f44;
   display: grid;
 }
 
 nav a {
   text-decoration: none;
-  color: #272b30;
+  color: #150f44;
 }
 
 nav .logo {
   font-family: "Elsie Swash Caps", sans-serif;
   font-size: 52px;
-  color: violet;
-  animation: neon 0.08s ease-in-out infinite alternate;
+  color: #95186c;
   margin: 0;
 }
 
@@ -57,8 +36,8 @@ nav li {
 }
 
 #home {
-  background-color: #272b30;
-  color: #3ff5ac;
+  background-color: #150f44;
+  color: #00ffc9;
 }
 
 #home .name {
@@ -74,6 +53,16 @@ nav li {
   font-size: 22px;
   font-family: "Roboto Mono", sans-serif;
   color: #f7f3d7;
+}
+
+#home .links div a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: #f7f3d7;
+}
+
+#home .links div a i {
+  font-size: 30px;
 }
 
 #home .profile-img {
@@ -92,7 +81,7 @@ nav li {
 #projects h2 {
   font-family: "Elsie Swash Caps", sans-serif;
   font-size: 36px;
-  color: #363149;
+  color: #150f44;
   text-align: center;
 }
 
@@ -121,7 +110,7 @@ nav li {
 
 #projects .card-description h3 {
   font-size: 28px;
-  color: #363149;
+  color: #150f44;
   text-align: center;
   font-family: "Elsie Swash Caps", sans-serif;
 }
@@ -129,7 +118,7 @@ nav li {
 #projects .card-description p {
   font-size: 20px;
   font-family: "Roboto Mono", sans-serif;
-  color: #272b30;
+  color: #150f44;
 }
 
 #projects .project-img {
@@ -141,23 +130,34 @@ nav li {
 }
 
 #projects .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+#projects .buttons .technology {
+  border: 2px solid #150f44;
+  color: #150f44;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 5px;
 }
 
 #projects .buttons a {
   font-size: 18px;
   font-family: "Roboto Mono", sans-serif;
-  color: #3ff5ac;
+  color: #00ffc9;
   padding: 8px;
-  background-color: #363149;
-  border: 1px solid #363149;
+  background-color: #150f44;
+  border: 1px solid #150f44;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
 
 #skills {
-  background-color: #272b30;
+  background-color: #150f44;
   padding-bottom: 20px;
 }
 
@@ -176,18 +176,16 @@ nav li {
 }
 
 #skills i {
-  font-size: 120px;
+  font-size: 60px;
   padding-bottom: 20px;
 }
 
 #skills .violet {
-  color: violet;
-  animation: neon 0.08s ease-in-out infinite alternate;
+  color: #ec8ecc;
 }
 
 #skills .green {
-  color: #3ff5ac;
-  animation: neon-green 0.08s ease-in-out infinite alternate;
+  color: #00ffc9;
 }
 
 #contact {
@@ -197,7 +195,7 @@ nav li {
 #contact h2 {
   font-family: "Elsie Swash Caps", sans-serif;
   font-size: 36px;
-  color: #363149;
+  color: #150f44;
   text-align: center;
 }
 
@@ -213,13 +211,13 @@ nav li {
 #contact .contact-div a {
   text-decoration: none;
   padding: 20px;
-  color: #363149;
+  color: #150f44;
 }
 
 footer {
-  background-color: #3ff5ac;
+  background-color: #00ffc9;
   font-family: "Roboto Mono", sans-serif;
-  color: #363149;
+  color: #150f44;
   text-align: center;
   padding: 35px 0;
 }
@@ -252,6 +250,16 @@ footer {
 
   #projects .card {
     width: 90% !important;
+  }
+
+  #projects .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  #projects .buttons div {
+    padding: 15px 0 10px 0;
   }
 
   #skills div {
@@ -288,6 +296,10 @@ footer {
 
   #home .profile-img {
     width: 35%;
+  }
+
+  #home .links div {
+    display: block;
   }
 
   #home div {
