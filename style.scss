@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps|Roboto+Mono:300,400,700&display=swap');
 
-$dark-bg-color: #272b30;
+$dark-bg-color: #150F44;
 $light-bg-color: #f7f3d7;
-$blue-font-color: #3ff5ac;
-$violet-font-color: #363149;
+$blue-font-color: #00FFC9;
+$violet-font-color: #150F44;
 $main-font: 'Roboto Mono', sans-serif;
 $logo-font: 'Elsie Swash Caps', sans-serif;
 
@@ -25,7 +25,7 @@ nav {
   .logo {
     font-family: $logo-font;
     font-size: 52px;
-    color: violet;
+    color: #95186C;
     margin: 0;
   }
 
@@ -166,7 +166,7 @@ nav {
   }
 
   .violet {
-    color: violet;
+    color: #EC8ECC;
   }
 
   .green {

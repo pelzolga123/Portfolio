@@ -4,16 +4,16 @@ body {
   padding: 0; }
 
 nav {
-  background-color: #3ff5ac;
-  color: #272b30;
+  background-color: #00FFC9;
+  color: #150F44;
   display: grid; }
   nav a {
     text-decoration: none;
-    color: #272b30; }
+    color: #150F44; }
   nav .logo {
     font-family: "Elsie Swash Caps", sans-serif;
     font-size: 52px;
-    color: violet;
+    color: #95186C;
     margin: 0; }
   nav .nav-buttons {
     font-family: "Roboto Mono", sans-serif;
@@ -25,8 +25,8 @@ nav {
     list-style: none; }
 
 #home {
-  background-color: #272b30;
-  color: #3ff5ac; }
+  background-color: #150F44;
+  color: #00FFC9; }
   #home .name {
     padding: 40px; }
   #home h1 {
@@ -49,7 +49,7 @@ nav {
   #projects h2 {
     font-family: "Elsie Swash Caps", sans-serif;
     font-size: 36px;
-    color: #363149;
+    color: #150F44;
     text-align: center; }
   #projects .card {
     box-shadow: 0 4px 8px 0 rgba(41, 12, 33, 0.2);
@@ -70,13 +70,13 @@ nav {
     justify-content: space-around; }
     #projects .card-description h3 {
       font-size: 28px;
-      color: #363149;
+      color: #150F44;
       text-align: center;
       font-family: "Elsie Swash Caps", sans-serif; }
     #projects .card-description p {
       font-size: 20px;
       font-family: "Roboto Mono", sans-serif;
-      color: #272b30; }
+      color: #150F44; }
   #projects .project-img {
     display: flex; }
     #projects .project-img img {
@@ -86,16 +86,16 @@ nav {
     #projects .buttons a {
       font-size: 18px;
       font-family: "Roboto Mono", sans-serif;
-      color: #3ff5ac;
+      color: #00FFC9;
       padding: 8px;
-      background-color: #363149;
-      border: 1px solid #363149;
+      background-color: #150F44;
+      border: 1px solid #150F44;
       border-radius: 5px;
       cursor: pointer;
       text-decoration: none; }
 
 #skills {
-  background-color: #272b30;
+  background-color: #150F44;
   padding-bottom: 20px; }
   #skills h2 {
     font-family: "Elsie Swash Caps", sans-serif;
@@ -111,16 +111,16 @@ nav {
     font-size: 120px;
     padding-bottom: 20px; }
   #skills .violet {
-    color: violet; }
+    color: #EC8ECC; }
   #skills .green {
-    color: #3ff5ac; }
+    color: #00FFC9; }
 
 #contact {
   background-color: #f7f3d7; }
   #contact h2 {
     font-family: "Elsie Swash Caps", sans-serif;
     font-size: 36px;
-    color: #363149;
+    color: #150F44;
     text-align: center; }
   #contact .contact-div {
     font-size: 50px;
@@ -132,12 +132,12 @@ nav {
     #contact .contact-div a {
       text-decoration: none;
       padding: 20px;
-      color: #363149; }
+      color: #150F44; }
 
 footer {
-  background-color: #3ff5ac;
+  background-color: #00FFC9;
   font-family: "Roboto Mono", sans-serif;
-  color: #363149;
+  color: #150F44;
   text-align: center;
   padding: 35px 0; }
 
