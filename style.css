@@ -36,6 +36,12 @@ nav {
     font-size: 22px;
     font-family: "Roboto Mono", sans-serif;
     color: #f7f3d7; }
+  #home .links div a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: #f7f3d7; }
+    #home .links div a i {
+      font-size: 30px; }
   #home .profile-img {
     width: 400px;
     border-radius: 50%;
@@ -170,6 +176,12 @@ footer {
     margin-bottom: 20px; }
   #projects .card {
     width: 90% !important; }
+  #projects .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
+    #projects .buttons div {
+      padding: 15px 0 10px 0; }
 
   #skills div {
     display: flex;
@@ -196,6 +208,8 @@ footer {
     padding: 60px 0; }
     #home .profile-img {
       width: 35%; }
+    #home .links div {
+      display: block; }
     #home div {
       justify-content: center;
       display: flex;
