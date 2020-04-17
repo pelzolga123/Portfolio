@@ -12,50 +12,6 @@ body {
   padding: 0;
 }
 
-@keyframes neon {
-  from {
-    text-shadow:
-      0 0 6px rgba(231, 34, 179, 0.92),
-      0 0 30px rgba(231, 34, 179, 0.34),
-      0 0 12px rgba(193, 30, 242, 0.52),
-      0 0 21px rgba(193, 30, 242, 0.92),
-      0 0 34px rgba(193, 30, 242, 0.78),
-      0 0 54px rgba(193, 30, 242, 0.92);
-  }
-
-  to {
-    text-shadow:
-      0 0 6px rgba(231, 34, 179, 0.98),
-      0 0 30px rgba(231, 34, 179, 0.42),
-      0 0 12px rgba(193, 30, 242, 0.58),
-      0 0 22px rgba(193, 30, 242, 0.84),
-      0 0 38px rgba(193, 30, 242, 0.88),
-      0 0 60px rgba(193, 30, 242, 1);
-  }
-}
-
-@keyframes neon-green {
-  from {
-    text-shadow:
-      0 0 6px rgba(31, 189, 141, 0.92),
-      0 0 30px rgba(31, 189, 141, 0.34),
-      0 0 12px rgba(31, 189, 141, 0.52),
-      0 0 21px rgba(31, 189, 141, 0.92),
-      0 0 34px rgba(31, 189, 141, 0.78),
-      0 0 54px rgba(31, 189, 141, 0.92);
-  }
-
-  to {
-    text-shadow:
-      0 0 6px rgba(31, 189, 141, 0.98),
-      0 0 30px rgba(31, 189, 141, 0.42),
-      0 0 12px rgba(31, 189, 141, 0.58),
-      0 0 22px rgba(31, 189, 141, 0.84),
-      0 0 38px rgba(31, 189, 141, 0.88),
-      0 0 60px rgba(31, 189, 141, 1);
-  }
-}
-
 nav {
   background-color: $blue-font-color;
   color: $dark-bg-color;
@@ -70,7 +26,6 @@ nav {
     font-family: $logo-font;
     font-size: 52px;
     color: violet;
-    animation: neon 0.08s ease-in-out infinite alternate;
     margin: 0;
   }
 
@@ -212,12 +167,10 @@ nav {
 
   .violet {
     color: violet;
-    animation: neon 0.08s ease-in-out infinite alternate;
   }
 
   .green {
     color: $blue-font-color;
-    animation: neon-green 0.08s ease-in-out infinite alternate;
   }
 }
 
